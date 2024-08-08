@@ -11,8 +11,8 @@ export default function Input({toDo,setToDo}){
         })
         alert(toDo.description)
     }
-    function handleSubmit(event){
-        event.preventDefault()
+    function handleSubmit(e){
+        e.preventDefault()
         localStorage.setItem("haa",JSON.stringify(toDo))
         console.log(JSON.parse(localStorage.getItem("haa")))
     }
